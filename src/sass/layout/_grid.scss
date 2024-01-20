@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 6rem 1fr;
+  grid-template-columns: [sidebar-start] max-content [sidebar-end full-start] 1fr repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) 1fr [full-end];
+}
+
+.header {
+  grid-column: sidebar-start/full-end;
+  grid-row: 1/2;
+
+  background-color: red;
+}
+
+.sidebar {
+  grid-column: sidebar-start/sidebar-end;
+  grid-row: 2/-1;
+
+  background-color: black;
+}
+
+.main {
+  grid-column: full-start/full-end;
+  grid-row: 2/-1;
+  background-color: blue;
+}
