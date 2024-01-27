@@ -14,22 +14,25 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <img src="src/img/top-movies-logo.png" alt="top movies logo" class="logo" />
-
-        <div class="user">user</div>
-      </header>
-
       <aside class="sidebar">
+        <a href="index.html" class="logo">
+          <img src="src/img/top-movies-logo.png" alt="top movies logo" class="logo__img" />
+        </a>
+
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">all</a></li>
+            <li class="nav__item"><a href="#" class="nav__link nav__active">all</a></li>
             <li class="nav__item"><a href="#" class="nav__link">categories</a></li>
           </ul>
         </nav>
       </aside>
 
-      <main class="main">main</main>
+      <header class="header">
+        <input type="search" class="search" />
+        <div class="user">user</div>
+      </header>
+
+      <div class="cards">cards</div>
     </div>
   </body>
 </html>
