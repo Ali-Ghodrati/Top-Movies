@@ -10,5 +10,9 @@
 @import "pages/home";
 
 @import "layout/grid";
-@import "layout/header";
+@import "layout/main";
 @import "layout/sidebar";
+
+@import "components/search";
+@import "components/user";
+@import "components/card";
