@@ -21,7 +21,7 @@
 
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link nav__active">all</a></li>
+            <li class="nav__item"><a href="#" class="nav__link nav__active">Home</a></li>
             <li class="nav__item"><a href="#" class="nav__link">categories</a></li>
           </ul>
         </nav>
@@ -32,113 +32,88 @@
         <div class="user">USER</div>
 
         <div class="main-container">
-          <div class="card">
-            <img src="src/img/tt0111161_poster.jpg" alt="movie poster" class="card__img" />
+          <!-- Card templaate -->
+          <!--
+          <div class="cards">
+              <div class="card">
+              <img src="src/img/tt0111161_poster.jpg" alt="movie poster" class="card__img" />
 
-            <span class="card__num">#1</span>
+              <span class="card__num">#1</span>
 
-            <div class="card__information">
-              <p class="card__title">The Shawshank Redemption</p>
-              <div class="card__genres">
-                <span class="card__genre">Action</span>
-                <span>&bull;</span>
-                <span class="card__genre">Adventure</span>
-                <span>&bull;</span>
-                <span class="card__genre">History</span>
-              </div>
+              <div class="card__information">
+                <p class="card__title">The Shawshank Redemption</p>
+                <div class="card__genres">
+                  <span class="card__genre">Action</span>
+                  <span>&bull;</span>
+                  <span class="card__genre">Adventure</span>
+                  <span>&bull;</span>
+                  <span class="card__genre">History</span>
+                </div>
 
-              <div class="card__details">
-                <p class="card__year">
-                  <svg class="card__icon">
-                    <use xlink:href="src/img/sprite.svg#calendar"></use>
-                  </svg>
-                  1994
-                </p>
-                <p class="card__country">
-                  <svg class="card__icon">
-                    <use xlink:href="src/img/sprite.svg#globe"></use>
-                  </svg>
-                  USA
-                </p>
-                <p class="card__rating">
-                  <svg class="card__icon">
-                    <use xlink:href="src/img/sprite.svg#trophy"></use>
-                  </svg>
-                  9.3
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="src/img/tt0068646_poster.jpg" alt="movie poster" class="card__img" />
-
-            <span class="card__num">#2</span>
-
-            <div class="card__information">
-              <p class="card__title">The Godfather</p>
-              <div class="card__genres">
-                <span class="card__genre">Crime</span>
-                <span>&bull;</span>
-                <span class="card__genre">Drama</span>
-              </div>
-
-              <div class="card__details">
-                <p class="card__year">
-                  <svg class="card__icon">
-                    <use xlink:href="src/img/sprite.svg#calendar"></use>
-                  </svg>
-                  1972
-                </p>
-                <p class="card__country">
-                  <svg class="card__icon">
-                    <use xlink:href="src/img/sprite.svg#globe"></use>
-                  </svg>
-                  USA
-                </p>
-                <p class="card__rating">
-                  <svg class="card__icon">
-                    <use xlink:href="src/img/sprite.svg#trophy"></use>
-                  </svg>
-                  9.2
-                </p>
+                <div class="card__details">
+                  <p class="card__year">
+                    <svg class="card__icon">
+                      <use xlink:href="src/img/sprite.svg#calendar"></use>
+                    </svg>
+                    1994
+                  </p>
+                  <p class="card__country">
+                    <svg class="card__icon">
+                      <use xlink:href="src/img/sprite.svg#globe"></use>
+                    </svg>
+                    USA
+                  </p>
+                  <p class="card__rating">
+                    <svg class="card__icon">
+                      <use xlink:href="src/img/sprite.svg#trophy"></use>
+                    </svg>
+                    9.3
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="card">
-            <img src="src/img/tt0071562_poster.jpg" alt="movie poster" class="card__img" />
+          <div class="movie">
+            <div class="movie__img-box">
+              <img src="src/img/tt0111161_poster.jpg" alt="" />
+            </div>
 
-            <span class="card__num">#3</span>
+            <div class="movie__information">
+              <h2 class="movie__title">The Shawshank Redemption</h2>
 
-            <div class="card__information">
-              <p class="card__title">The Godfather: Part II</p>
-              <div class="card__genres">
-                <span class="card__genre">Crime</span>
-                <span>&bull;</span>
-                <span class="card__genre">Drama</span>
+              <div class="movie__detail margin-bottom-md">
+                <span class="movie__country">USA</span>
+                <span class="vertical-bar">&#124;</span>
+                <span class="movie__year">14 Oct 1994</span>
+                <span class="vertical-bar">&#124;</span>
+                <span class="movie__time">142 min</span>
+                <span class="vertical-bar">&#124;</span>
+                <div class="movie__genres">
+                  <span class="movie__genre">Crime</span>
+                  ,
+                  <span class="movie__genre">Drama</span>
+                </div>
               </div>
 
-              <div class="card__details">
-                <p class="card__year">
-                  <svg class="card__icon">
-                    <use xlink:href="src/img/sprite.svg#calendar"></use>
-                  </svg>
-                  1974
-                </p>
-                <p class="card__country">
-                  <svg class="card__icon">
-                    <use xlink:href="src/img/sprite.svg#globe"></use>
-                  </svg>
-                  USA
-                </p>
-                <p class="card__rating">
-                  <svg class="card__icon">
-                    <use xlink:href="src/img/sprite.svg#trophy"></use>
-                  </svg>
-                  9.0
-                </p>
-              </div>
+              <p class="movie__story margin-bottom-md">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
+
+              <p class="movie__rating margin-bottom-md">9.3<span>/10</span></p>
+
+              <p class="movie__data margin-bottom-sm">
+                <span class="movie__secondary_title">Director:</span>
+                Frank Darabont
+              </p>
+
+              <p class="movie__data margin-bottom-sm">
+                <span class="movie__secondary_title">Stars:</span>
+                Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler
+              </p>
+
+              <p class="movie__data">
+                <span class="movie__secondary_title">Awards:</span>
+                Nominated for 7 Oscars. Another 19 wins & 30 nominations.
+              </p>
             </div>
           </div>
         </div>
