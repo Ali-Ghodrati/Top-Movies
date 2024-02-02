@@ -10,6 +10,7 @@
   --color-primary: #e71d36;
   --color-primary-dark-1: #450910;
   --color-primary-light-1: #b59d9f;
+  --color-primary-light-2: #8f6b70;
   --color-secondary: #011627;
   --color-gray-light-1: #f1f3f5;
   --color-gray-light-2: #fefefe;
@@ -44,7 +45,7 @@ body {
 }
 
 .margin-bottom-md {
-  margin-bottom: 1.6rem;
+  margin-bottom: 2.4rem;
 }
 
 .margin-bottom-lg {
@@ -74,7 +75,7 @@ body {
 .main {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: min-content min-content;
+  grid-template-rows: min-content 1fr;
   gap: 1.2rem;
   padding: 1.6rem;
 }
@@ -92,8 +93,13 @@ body {
 .main-container {
   grid-column: 1/-1;
   grid-row: 2/-1;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+}
+
+.cards {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.6rem;
 }
 
@@ -233,6 +239,68 @@ body {
   width: 1.2rem;
   height: 1.2rem;
   fill: var(--color-primary-dark-1);
+}
+
+.movie {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  height: 100%;
+  background-color: var(--color-gray-light-2);
+}
+.movie__img-box {
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+}
+.movie__img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.movie__information {
+  padding: 3.2rem;
+}
+.movie__title {
+  font-size: 4rem;
+}
+.movie__detail {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color-primary-light-2);
+}
+.movie__genres {
+  display: flex;
+  gap: 0.2rem;
+}
+.movie__story {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  padding-right: 6.4rem;
+}
+.movie__rating {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.movie__rating span {
+  font-weight: 400;
+  color: var(--color-primary-light-2);
+}
+.movie__data {
+  font-size: 1.6rem;
+  display: flex;
+  gap: 0.8rem;
+}
+.movie__secondary_title {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.vertical-bar {
+  font-weight: 600;
+  color: var(--color-primary);
 }
 
 /*# sourceMappingURL=style.css.map */
