@@ -5,3 +5,23 @@ body {
   line-height: 1.5;
   color: var(--color-primary-dark-1);
 }
+
+html {
+  font-size: 62.5%;
+
+  @include respond(large) {
+    font-size: 56.25%;
+  }
+
+  @include respond(medium) {
+    font-size: 50%;
+  }
+
+  @include respond(small) {
+    font-size: 43.75%;
+  }
+
+  @include respond(smallest) {
+    font-size: 37.5%;
+  }
+}

@@ -34,9 +34,25 @@
     color: var(--color-primary-light-2);
   }
 
+  &__country,
+  &__year,
+  &__time {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  &__icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: var(--color-primary);
+  }
+
   &__genres {
     display: flex;
-    gap: 0.2rem;
+    align-items: center;
+
+    gap: 0.4rem;
   }
 
   &__story {
@@ -45,21 +61,18 @@
     padding-right: 6.4rem;
   }
 
-  &__rating {
-    font-size: 3rem;
-    font-weight: 600;
-
-    span {
-      font-weight: 400;
-      color: var(--color-primary-light-2);
-    }
-  }
-
   &__data {
     font-size: 1.6rem;
 
     display: flex;
+    align-items: center;
     gap: 0.8rem;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      fill: var(--color-primary);
+    }
   }
 
   &__secondary_title {
@@ -71,4 +84,23 @@
 .vertical-bar {
   font-weight: 600;
   color: var(--color-primary);
+}
+
+.rating {
+  font-size: 3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--color-primary);
+  }
+
+  span {
+    font-weight: 400;
+    color: var(--color-primary-light-2);
+  }
 }

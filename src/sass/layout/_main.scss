@@ -27,6 +27,18 @@
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.6rem;
+
+  @include respond(medium) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include respond(small) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(smallest) {
+    grid-template-columns: 1fr;
+  }
 }

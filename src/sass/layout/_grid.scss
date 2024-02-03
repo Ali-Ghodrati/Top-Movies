@@ -13,9 +13,19 @@
   grid-row: 1/-1;
 
   background-color: var(--color-gray-light-2);
+
+  @include respond(largest) {
+    grid-column: sidebar-start/main-end;
+    grid-row: 1/2;
+  }
 }
 
 .main {
   grid-column: main-start/main-end;
   grid-row: 1/-1;
+
+  @include respond(largest) {
+    grid-column: sidebar-start/main-end;
+    grid-row: 2/-1;
+  }
 }
