@@ -7,9 +7,45 @@
   font-family: var(--font-primary);
   font-size: 1.6rem;
 
+  @include respond(large) {
+    padding: 1.6rem;
+    font-size: 1.8rem;
+  }
+
+  @include respond(medium) {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  @include respond(small) {
+    padding: 2.4rem;
+    font-size: 2.4rem;
+  }
+
+  @include respond(smallest) {
+    padding: 2.6rem;
+    font-size: 2.6rem;
+  }
+
   &::placeholder {
     font-family: var(--font-primary);
     font-size: 1.6rem;
     color: var(--color-primary-light-1);
+
+    @include respond(large) {
+      font-size: 1.8rem;
+    }
+
+    @include respond(medium) {
+      font-size: 2rem;
+    }
+
+    @include respond(small) {
+      font-size: 2.4rem;
+    }
+
+    @include respond(smallest) {
+      font-size: 2.6rem;
+    }
   }
 }

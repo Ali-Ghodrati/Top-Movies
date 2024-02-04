@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 6rem 1fr;
+  grid-template-rows: 15vh 1fr;
   grid-template-columns: [sidebar-start] max-content [sidebar-end main-start] 1fr [main-end];
 
   background-color: var(--color-gray-light-1);

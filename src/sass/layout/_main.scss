@@ -2,9 +2,14 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: min-content 1fr;
-  gap: 1.2rem;
+  gap: 1.6rem;
 
   padding: 1.6rem;
+
+  @include respond(medium) {
+    padding: 2.4rem;
+    gap: 2.4rem;
+  }
 }
 
 .search {
@@ -32,6 +37,7 @@
 
   @include respond(medium) {
     grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
   }
 
   @include respond(small) {

@@ -14,9 +14,24 @@
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+
   &__img {
     height: 2.8rem;
     padding-left: 1.6rem;
+
+    @include respond(medium) {
+      padding-left: 2.4rem;
+    }
+
+    @include respond(small) {
+      height: 3.5rem;
+    }
+
+    @include respond(smallest) {
+      height: 4.5rem;
+    }
   }
 }
 
@@ -30,6 +45,10 @@
     @include respond(largest) {
       flex-direction: row-reverse;
       padding: 1.6rem;
+    }
+
+    @include respond(medium) {
+      padding: 2.4rem;
     }
   }
 
@@ -49,8 +68,25 @@
       transition: all 0.4s;
 
       @include respond(largest) {
-        padding: 0.8rem;
+        padding: 0.4rem 1.2rem;
         border-radius: var(--border-radius-sm);
+      }
+
+      @include respond(large) {
+        padding: 0.8rem 1.6rem;
+        border-radius: var(--border-radius-sm);
+      }
+
+      @include respond(medium) {
+        font-size: 2rem;
+      }
+
+      @include respond(small) {
+        font-size: 2.2rem;
+      }
+
+      @include respond(smallest) {
+        font-size: 2.4rem;
       }
     }
 
