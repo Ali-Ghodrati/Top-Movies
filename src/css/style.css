@@ -79,9 +79,34 @@ html {
   width: 100%;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 15vh 1fr;
+  grid-template-rows: 6rem 1fr;
   grid-template-columns: [sidebar-start] max-content [sidebar-end main-start] 1fr [main-end];
   background-color: var(--color-gray-light-1);
+}
+@media only screen and (max-width: 72em) {
+  .container {
+    grid-template-rows: 7rem 1fr;
+  }
+}
+@media only screen and (max-width: 59em) {
+  .container {
+    grid-template-rows: 8rem 1fr;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .container {
+    grid-template-rows: 8.5rem 1fr;
+  }
+}
+@media only screen and (max-width: 41em) {
+  .container {
+    grid-template-rows: 9rem 1fr;
+  }
+}
+@media only screen and (max-width: 29em) {
+  .container {
+    grid-template-rows: 10rem 1fr;
+  }
 }
 
 .sidebar {

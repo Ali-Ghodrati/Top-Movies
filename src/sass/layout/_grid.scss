@@ -2,10 +2,30 @@
   width: 100%;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 15vh 1fr;
+  grid-template-rows: 6rem 1fr;
   grid-template-columns: [sidebar-start] max-content [sidebar-end main-start] 1fr [main-end];
 
   background-color: var(--color-gray-light-1);
+
+  @include respond(largest) {
+    grid-template-rows: 7rem 1fr;
+  }
+
+  @include respond(large) {
+    grid-template-rows: 8rem 1fr;
+  }
+
+  @include respond(medium) {
+    grid-template-rows: 8.5rem 1fr;
+  }
+
+  @include respond(small) {
+    grid-template-rows: 9rem 1fr;
+  }
+
+  @include respond(smallest) {
+    grid-template-rows: 10rem 1fr;
+  }
 }
 
 .sidebar {
