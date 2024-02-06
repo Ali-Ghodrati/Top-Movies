@@ -12,7 +12,7 @@
   }
 
   @if $breakpoint == medium {
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 51em) {
       @content;
     }
   }

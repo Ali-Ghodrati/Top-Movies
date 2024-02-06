@@ -24,7 +24,7 @@
   }
 
   @include respond(smallest) {
-    grid-template-rows: 10rem 1fr;
+    grid-template-rows: 11rem 1fr;
   }
 }
 
